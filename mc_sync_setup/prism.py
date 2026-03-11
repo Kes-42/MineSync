@@ -6,7 +6,8 @@ def get_prism_instances():
     instances = {}
     paths_to_check = [
         Path.home() / ".local" / "share" / "PrismLauncher" / "instances",
-        Path.home() / ".var" / "app" / "org.prismlauncher.PrismLauncher" / "data" / "PrismLauncher" / "instances"
+        Path.home() / ".var" / "app" / "org.prismlauncher.PrismLauncher" / "data" / "PrismLauncher" / "instances",
+        Path.home() / "Library" / "Application Support" / "PrismLauncher" / "instances" # macOS
     ]
     
     for base_path in paths_to_check:
