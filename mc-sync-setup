@@ -1,0 +1,3 @@
+#!/bin/bash
+export PYTHONPATH="/app/share/mc_sync_setup:$PYTHONPATH"
+exec python3 -m mc_sync_setup.main

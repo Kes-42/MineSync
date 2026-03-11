@@ -1,0 +1,33 @@
+{
+    "app-id": "com.github.lilz.MCSyncSetup",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "47",
+    "sdk": "org.gnome.Sdk",
+    "command": "mc-sync-setup",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=fallback-x11",
+        "--socket=wayland",
+        "--device=dri",
+        "--filesystem=~/.local/share/PrismLauncher:rw",
+        "--filesystem=~/.var/app/org.prismlauncher.PrismLauncher:rw",
+        "--filesystem=~/.config/rclone:ro"
+    ],
+    "modules": [
+        {
+            "name": "mc-sync-setup",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -D mc-sync-setup /app/bin/mc-sync-setup",
+                "install -D -d /app/share/mc_sync_setup/mc_sync_setup",
+                "install -D -m 644 mc_sync_setup/*.py /app/share/mc_sync_setup/mc_sync_setup/"
+            ],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "."
+                }
+            ]
+        }
+    ]
+}
