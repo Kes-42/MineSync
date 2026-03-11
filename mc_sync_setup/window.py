@@ -11,7 +11,7 @@ from mc_sync_setup.scripts_gen import generate_sync_scripts
 class SyncSetupWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.set_title("MC Sync Setup")
+        self.set_title("MineSync")
         self.set_default_size(550, 500)
         
         # Header Bar
