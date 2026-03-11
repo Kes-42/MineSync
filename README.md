@@ -16,6 +16,22 @@ It is designed specifically for modded setups matching the configuration outline
 - Prism Launcher must be installed on your Linux system.
 - Python 3 and PyGObject are required to run directly.
 
+## Rclone Setup (Google Drive)
+Before using MineSync, you need to configure `rclone` to talk to your Google Drive account. This only needs to be done once per computer.
+
+1. Open your terminal and run `rclone config`
+2. Type `n` to create a New remote.
+3. Name the remote `gdrive` (this is what MineSync looks for by default).
+4. For Storage type, type `drive` to select Google Drive.
+5. Leave "Client ID" and "Client Secret" blank (press Enter twice).
+6. For Scope, type `1` (Full access all files).
+7. Leave "Service Account file" blank (press Enter).
+8. For "Advanced config", answer `n` (No).
+9. For "Web Browser Authentication", answer `y` (Yes).
+10. Your web browser will open. Log into your Google account and click "Allow".
+11. Back in the terminal, answer `n` (No) for Shared Drive.
+12. Answer `y` (Yes) to keep this remote, and then press `q` to quit.
+
 ## Running via Flatpak
 This project uses Flatpak for simple distribution across any Linux distribution.
 ```bash
