@@ -35,3 +35,8 @@ python3 -m mc_sync_setup.main
 3. Click "Apply Sync Setup".
 4. The application generates scripts inside your instance directory and injects `PreLaunchCommand` and `PostExitCommand` hooks into `instance.cfg`. 
 5. Start Prism Launcher and play! `bisync` logic will make sure everything stays up-to-date.
+
+## Roadmap
+- [ ] Automatic configuration of `rclone` during installation
+- [ ] Support for other cloud services besides Google Drive
+- [ ] Native macOS support
