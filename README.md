@@ -1,6 +1,6 @@
-# MC Sync Setup
+# MineSync
 
-MC Sync Setup is a native Linux GUI tool written in Python, GTK4, and libadwaita. It automates the process of synchronizing Minecraft saves between computers using `rclone bisync`. 
+MineSync is a native Linux GUI tool written in Python, GTK4, and libadwaita. It automates the process of synchronizing Minecraft saves between computers using `rclone bisync`. 
 
 It is designed specifically for modded setups matching the configuration outlined in the author's prior research, targeting setups using massive mods such as Voxy, Chunky, and Xaero's World Map on instances managed by Prism Launcher.
 
